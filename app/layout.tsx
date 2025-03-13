@@ -9,7 +9,7 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Dal Bati Churma - AI Education Platform",
+  title: "Ascend AI - AI Education Platform",
   description: "An AI-powered educational platform that personalizes learning and makes education accessible to all.",
     generator: 'v0.dev'
 }

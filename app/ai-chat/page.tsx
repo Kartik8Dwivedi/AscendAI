@@ -43,7 +43,7 @@ export default function AIChatPage() {
   ])
 
   useEffect(() => {
-    scrollToBottom()
+    // scrollToBottom()
   }, [messages])
 
   const scrollToBottom = () => {

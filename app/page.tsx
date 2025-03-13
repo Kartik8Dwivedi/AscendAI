@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, Trophy, BarChart3, Users, Video, Mic, Brain, Sparkles, CheckCircle } from "lucide-react"
 
+
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -15,10 +16,12 @@ export default function Home() {
 
         <div className="container mx-auto px-4 z-10 text-white">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Learn by Teaching AI</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">
+              Learn by Teaching AI
+            </h1>
             <p className="text-xl md:text-2xl mb-8">
-              An AI-powered virtual classroom that personalizes learning, boosts engagement, and makes education
-              accessible to all.
+              An AI-powered virtual classroom that personalizes learning, boosts
+              engagement, and makes education accessible to all.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
@@ -28,7 +31,11 @@ export default function Home() {
                 Start Learning
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
+              <Button
+                size="lg"
+                variant="outline"
+                className="text-white bg-[#1f3aa5b1] border-white hover:bg-white hover:text-black"
+              >
                 Watch Demo
                 <Video className="ml-2 h-5 w-5" />
               </Button>
@@ -41,9 +48,12 @@ export default function Home() {
       <section className="py-20 bg-white dark:bg-gray-950">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">How Our Revolutionary Platform Works</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              How Our Revolutionary Platform Works
+            </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              Our dual AI model approach creates a complete learning ecosystem that adapts to each student's needs
+              Our dual AI model approach creates a complete learning ecosystem
+              that adapts to each student's needs
             </p>
           </div>
 
@@ -57,7 +67,14 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="rounded-full bg-white/20 p-4 backdrop-blur-sm">
-                    <Video className="h-12 w-12 text-white" />
+                    <video
+                      className="h-12 w-12 object-cover"
+                      src="/public/videoplayback.mp4"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                    />
                   </div>
                 </div>
               </div>
@@ -69,10 +86,13 @@ export default function Home() {
                   <Video className="h-6 w-6 text-purple-600 dark:text-purple-400" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Video-Based Learning with Model A</h3>
+                  <h3 className="text-xl font-semibold mb-2">
+                    Video-Based Learning with Model A
+                  </h3>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Our AI tutor (Model A) delivers personalized video lessons tailored to your learning style and pace.
-                    The content adapts in real-time based on your interactions and progress.
+                    Our AI tutor (Model A) delivers personalized video lessons
+                    tailored to your learning style and pace. The content adapts
+                    in real-time based on your interactions and progress.
                   </p>
                 </div>
               </div>
@@ -82,10 +102,13 @@ export default function Home() {
                   <Mic className="h-6 w-6 text-blue-600 dark:text-blue-400" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Interactive Doubt Resolution</h3>
+                  <h3 className="text-xl font-semibold mb-2">
+                    Interactive Doubt Resolution
+                  </h3>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Ask questions anytime during your lesson through voice or text. Model A instantly clarifies
-                    concepts, ensuring you never get stuck or fall behind.
+                    Ask questions anytime during your lesson through voice or
+                    text. Model A instantly clarifies concepts, ensuring you
+                    never get stuck or fall behind.
                   </p>
                 </div>
               </div>
@@ -95,10 +118,14 @@ export default function Home() {
                   <Brain className="h-6 w-6 text-green-600 dark:text-green-400" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Continuous Assessment with Model B</h3>
+                  <h3 className="text-xl font-semibold mb-2">
+                    Continuous Assessment with Model B
+                  </h3>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Model B silently evaluates your understanding by analyzing your questions and responses. It provides
-                    feedback to Model A, which then adjusts teaching methods to address your specific needs.
+                    Model B silently evaluates your understanding by analyzing
+                    your questions and responses. It provides feedback to Model
+                    A, which then adjusts teaching methods to address your
+                    specific needs.
                   </p>
                 </div>
               </div>
@@ -111,9 +138,12 @@ export default function Home() {
       <section className="py-20 bg-gray-50 dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Our Platform?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Why Choose Our Platform?
+            </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              Our AI-powered education system offers unique advantages that traditional methods can't match
+              Our AI-powered education system offers unique advantages that
+              traditional methods can't match
             </p>
           </div>
 
@@ -123,10 +153,13 @@ export default function Home() {
                 <div className="rounded-full bg-purple-100 dark:bg-purple-900/50 p-3 w-12 h-12 flex items-center justify-center mb-4">
                   <Users className="h-6 w-6 text-purple-600 dark:text-purple-400" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Personalized 1:1 Learning</h3>
+                <h3 className="text-xl font-semibold mb-2">
+                  Personalized 1:1 Learning
+                </h3>
                 <p className="text-gray-600 dark:text-gray-400">
-                  Every student gets their own AI tutor that adapts to their learning style, pace, and preferences. It's
-                  like having a dedicated teacher available 24/7.
+                  Every student gets their own AI tutor that adapts to their
+                  learning style, pace, and preferences. It's like having a
+                  dedicated teacher available 24/7.
                 </p>
               </CardContent>
             </Card>
@@ -136,10 +169,13 @@ export default function Home() {
                 <div className="rounded-full bg-blue-100 dark:bg-blue-900/50 p-3 w-12 h-12 flex items-center justify-center mb-4">
                   <Trophy className="h-6 w-6 text-blue-600 dark:text-blue-400" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Gamified Learning Experience</h3>
+                <h3 className="text-xl font-semibold mb-2">
+                  Gamified Learning Experience
+                </h3>
                 <p className="text-gray-600 dark:text-gray-400">
-                  Compete in MCQ battles with peers, earn credits for correct answers, and unlock achievements. Learning
-                  becomes fun, engaging, and motivating.
+                  Compete in MCQ battles with peers, earn credits for correct
+                  answers, and unlock achievements. Learning becomes fun,
+                  engaging, and motivating.
                 </p>
               </CardContent>
             </Card>
@@ -149,10 +185,13 @@ export default function Home() {
                 <div className="rounded-full bg-green-100 dark:bg-green-900/50 p-3 w-12 h-12 flex items-center justify-center mb-4">
                   <BarChart3 className="h-6 w-6 text-green-600 dark:text-green-400" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Detailed Progress Analytics</h3>
+                <h3 className="text-xl font-semibold mb-2">
+                  Detailed Progress Analytics
+                </h3>
                 <p className="text-gray-600 dark:text-gray-400">
-                  Track your learning journey with comprehensive analytics that identify strengths and areas for
-                  improvement. Watch your progress grow in real-time.
+                  Track your learning journey with comprehensive analytics that
+                  identify strengths and areas for improvement. Watch your
+                  progress grow in real-time.
                 </p>
               </CardContent>
             </Card>
@@ -163,19 +202,28 @@ export default function Home() {
       {/* Comparison Section */}
       <section className="py-20 bg-white dark:bg-gray-950">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Bridging the Education Gap</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+            Bridging the Education Gap
+          </h2>
           <p className="text-xl text-center text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-16">
-            Our platform addresses the key challenges in the Indian education system compared to high-performing
-            countries like Finland.
+            Our platform addresses the key challenges in the Indian education
+            system compared to high-performing countries like Finland.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8">
-              <h3 className="text-2xl font-semibold mb-6 text-center">Current Challenges in India</h3>
+              <h3 className="text-2xl font-semibold mb-6 text-center">
+                Current Challenges in India
+              </h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <div className="bg-red-100 dark:bg-red-900/50 text-red-600 dark:text-red-400 p-1 rounded-full mr-3 mt-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
                       <path
                         fillRule="evenodd"
                         d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
@@ -184,16 +232,24 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <span className="font-medium">Low teacher-student ratio</span>
+                    <span className="font-medium">
+                      Low teacher-student ratio
+                    </span>
                     <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                      India has only 2.4 teachers per 100 students compared to Finland's 8.7, leading to overcrowded
-                      classrooms and limited individual attention.
+                      India has only 2.4 teachers per 100 students compared to
+                      Finland's 8.7, leading to overcrowded classrooms and
+                      limited individual attention.
                     </p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <div className="bg-red-100 dark:bg-red-900/50 text-red-600 dark:text-red-400 p-1 rounded-full mr-3 mt-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
                       <path
                         fillRule="evenodd"
                         d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
@@ -202,16 +258,24 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <span className="font-medium">Lower PISA percentile scores</span>
+                    <span className="font-medium">
+                      Lower PISA percentile scores
+                    </span>
                     <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                      India ranks in the bottom 30% in PISA scores, while Finland consistently ranks in the top 10%,
-                      indicating a significant gap in educational outcomes.
+                      India ranks in the bottom 30% in PISA scores, while
+                      Finland consistently ranks in the top 10%, indicating a
+                      significant gap in educational outcomes.
                     </p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <div className="bg-red-100 dark:bg-red-900/50 text-red-600 dark:text-red-400 p-1 rounded-full mr-3 mt-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
                       <path
                         fillRule="evenodd"
                         d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
@@ -220,16 +284,24 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <span className="font-medium">Limited internet exposure</span>
+                    <span className="font-medium">
+                      Limited internet exposure
+                    </span>
                     <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                      Only 43% of India's population has internet access compared to Finland's 96%, creating a digital
-                      divide that limits access to online educational resources.
+                      Only 43% of India's population has internet access
+                      compared to Finland's 96%, creating a digital divide that
+                      limits access to online educational resources.
                     </p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <div className="bg-red-100 dark:bg-red-900/50 text-red-600 dark:text-red-400 p-1 rounded-full mr-3 mt-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
                       <path
                         fillRule="evenodd"
                         d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
@@ -238,10 +310,13 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <span className="font-medium">Outdated curriculum and teaching methods</span>
+                    <span className="font-medium">
+                      Outdated curriculum and teaching methods
+                    </span>
                     <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                      Many schools still rely on rote learning rather than critical thinking and practical application,
-                      failing to prepare students for modern challenges.
+                      Many schools still rely on rote learning rather than
+                      critical thinking and practical application, failing to
+                      prepare students for modern challenges.
                     </p>
                   </div>
                 </li>
@@ -249,11 +324,18 @@ export default function Home() {
             </div>
 
             <div className="bg-purple-50 dark:bg-purple-900/20 rounded-lg p-8">
-              <h3 className="text-2xl font-semibold mb-6 text-center">Our Solution</h3>
+              <h3 className="text-2xl font-semibold mb-6 text-center">
+                Our Solution
+              </h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <div className="bg-green-100 dark:bg-green-900/50 text-green-600 dark:text-green-400 p-1 rounded-full mr-3 mt-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
                       <path
                         fillRule="evenodd"
                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -262,16 +344,24 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <span className="font-medium">AI tutors for every student</span>
+                    <span className="font-medium">
+                      AI tutors for every student
+                    </span>
                     <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                      Our platform provides a personalized 1:1 teaching experience for every student, effectively
-                      solving the teacher shortage problem.
+                      Our platform provides a personalized 1:1 teaching
+                      experience for every student, effectively solving the
+                      teacher shortage problem.
                     </p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <div className="bg-green-100 dark:bg-green-900/50 text-green-600 dark:text-green-400 p-1 rounded-full mr-3 mt-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
                       <path
                         fillRule="evenodd"
                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -282,14 +372,20 @@ export default function Home() {
                   <div>
                     <span className="font-medium">Adaptive curriculum</span>
                     <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                      Our AI models deliver up-to-date content that adapts to global standards while focusing on
-                      critical thinking and practical application.
+                      Our AI models deliver up-to-date content that adapts to
+                      global standards while focusing on critical thinking and
+                      practical application.
                     </p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <div className="bg-green-100 dark:bg-green-900/50 text-green-600 dark:text-green-400 p-1 rounded-full mr-3 mt-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
                       <path
                         fillRule="evenodd"
                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -298,16 +394,24 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <span className="font-medium">Low bandwidth optimization</span>
+                    <span className="font-medium">
+                      Low bandwidth optimization
+                    </span>
                     <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                      Our platform is optimized for low-bandwidth connections and basic smartphones, making it
-                      accessible even in areas with limited internet connectivity.
+                      Our platform is optimized for low-bandwidth connections
+                      and basic smartphones, making it accessible even in areas
+                      with limited internet connectivity.
                     </p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <div className="bg-green-100 dark:bg-green-900/50 text-green-600 dark:text-green-400 p-1 rounded-full mr-3 mt-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
                       <path
                         fillRule="evenodd"
                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -316,10 +420,13 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <span className="font-medium">Engaging learning methods</span>
+                    <span className="font-medium">
+                      Engaging learning methods
+                    </span>
                     <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                      Our gamified approach with competitions, rewards, and interactive video lessons keeps students
-                      motivated and increases retention rates.
+                      Our gamified approach with competitions, rewards, and
+                      interactive video lessons keeps students motivated and
+                      increases retention rates.
                     </p>
                   </div>
                 </li>
@@ -333,9 +440,12 @@ export default function Home() {
       <section className="py-20 bg-gray-50 dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Powered by Advanced Technology</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Powered by Advanced Technology
+            </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              Our platform leverages cutting-edge AI and cloud technologies to deliver a seamless learning experience
+              Our platform leverages cutting-edge AI and cloud technologies to
+              deliver a seamless learning experience
             </p>
           </div>
 
@@ -435,7 +545,9 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="font-semibold">Multi-Device Support</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">Works on smartphones, tablets, and computers</p>
+              <p className="text-sm text-gray-600 dark:text-gray-400">
+                Works on smartphones, tablets, and computers
+              </p>
             </div>
           </div>
         </div>
@@ -445,9 +557,12 @@ export default function Home() {
       <section className="py-20 bg-white dark:bg-gray-950">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Success Stories</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Success Stories
+            </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              See how our platform is transforming education for students across India
+              See how our platform is transforming education for students across
+              India
             </p>
           </div>
 
@@ -464,17 +579,23 @@ export default function Home() {
                   </div>
                   <div className="text-center">
                     <h3 className="font-semibold text-lg">Priya Sharma</h3>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">10th Grade Student, Rajasthan</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      10th Grade Student, Rajasthan
+                    </p>
                   </div>
                 </div>
                 <div className="flex justify-center mb-4">
                   {[1, 2, 3, 4, 5].map((star) => (
-                    <CheckCircle key={star} className="h-5 w-5 text-yellow-500" />
+                    <CheckCircle
+                      key={star}
+                      className="h-5 w-5 text-yellow-500"
+                    />
                   ))}
                 </div>
                 <p className="text-gray-600 dark:text-gray-400 text-center">
-                  "I live in a remote village with limited access to quality teachers. This platform has completely
-                  changed my education. I've improved my math scores by 40% in just three months!"
+                  "I live in a remote village with limited access to quality
+                  teachers. This platform has completely changed my education.
+                  I've improved my math scores by 40% in just three months!"
                 </p>
               </CardContent>
             </Card>
@@ -491,17 +612,24 @@ export default function Home() {
                   </div>
                   <div className="text-center">
                     <h3 className="font-semibold text-lg">Rahul Patel</h3>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">12th Grade Student, Gujarat</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      12th Grade Student, Gujarat
+                    </p>
                   </div>
                 </div>
                 <div className="flex justify-center mb-4">
                   {[1, 2, 3, 4, 5].map((star) => (
-                    <CheckCircle key={star} className="h-5 w-5 text-yellow-500" />
+                    <CheckCircle
+                      key={star}
+                      className="h-5 w-5 text-yellow-500"
+                    />
                   ))}
                 </div>
                 <p className="text-gray-600 dark:text-gray-400 text-center">
-                  "The competitive aspect of the platform keeps me motivated. I've completed twice as many lessons as I
-                  would have with traditional methods. The video lessons are engaging and easy to understand."
+                  "The competitive aspect of the platform keeps me motivated.
+                  I've completed twice as many lessons as I would have with
+                  traditional methods. The video lessons are engaging and easy
+                  to understand."
                 </p>
               </CardContent>
             </Card>
@@ -518,17 +646,24 @@ export default function Home() {
                   </div>
                   <div className="text-center">
                     <h3 className="font-semibold text-lg">Anita Desai</h3>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">School Principal, Maharashtra</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      School Principal, Maharashtra
+                    </p>
                   </div>
                 </div>
                 <div className="flex justify-center mb-4">
                   {[1, 2, 3, 4, 5].map((star) => (
-                    <CheckCircle key={star} className="h-5 w-5 text-yellow-500" />
+                    <CheckCircle
+                      key={star}
+                      className="h-5 w-5 text-yellow-500"
+                    />
                   ))}
                 </div>
                 <p className="text-gray-600 dark:text-gray-400 text-center">
-                  "We've implemented this platform in our school, and the results are remarkable. Our students are more
-                  engaged, and teachers can focus on providing personalized guidance rather than basic instruction."
+                  "We've implemented this platform in our school, and the
+                  results are remarkable. Our students are more engaged, and
+                  teachers can focus on providing personalized guidance rather
+                  than basic instruction."
                 </p>
               </CardContent>
             </Card>
@@ -539,15 +674,25 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-purple-900 to-indigo-900 dark:from-purple-950 dark:to-indigo-950 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Learning Experience?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Ready to Transform Your Learning Experience?
+          </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Join thousands of students who are already benefiting from our AI-powered educational platform.
+            Join thousands of students who are already benefiting from our
+            AI-powered educational platform.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-purple-900 hover:bg-gray-100">
+            <Button
+              size="lg"
+              className="bg-white text-purple-900 hover:bg-gray-100"
+            >
               Get Started Now
             </Button>
-            <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
+            <Button
+              size="lg"
+              variant="outline"
+              className="text-white bg-[#1f3aa5b1] border-white hover:bg-white hover:text-black"
+            >
               Schedule a Demo
               <Video className="ml-2 h-5 w-5" />
             </Button>
@@ -555,6 +700,6 @@ export default function Home() {
         </div>
       </section>
     </div>
-  )
+  );
 }
 

@@ -35,30 +35,49 @@ export function Navbar() {
             <div className="rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 p-1 text-white">
               <BookOpen className="h-6 w-6" />
             </div>
-            <span className="text-xl font-bold">Dal Bati Churma</span>
+            <span className="text-xl font-bold">Ascend AI</span>
           </Link>
         </div>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-4">
           <div className="relative w-64">
-            <Input type="text" placeholder="Search topics..." className="pl-8" />
+            <Input
+              type="text"
+              placeholder="Search topics..."
+              className="pl-8"
+            />
             <Search className="absolute left-2 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-500" />
           </div>
           <nav className="flex items-center gap-6">
-            <Link href="/" className="text-sm font-medium transition-colors hover:text-primary">
+            <Link
+              href="/"
+              className="text-sm font-medium transition-colors hover:text-primary"
+            >
               Home
             </Link>
-            <Link href="/dashboard" className="text-sm font-medium transition-colors hover:text-primary">
+            <Link
+              href="/dashboard"
+              className="text-sm font-medium transition-colors hover:text-primary"
+            >
               Dashboard
             </Link>
-            <Link href="/subjects" className="text-sm font-medium transition-colors hover:text-primary">
+            <Link
+              href="/subjects"
+              className="text-sm font-medium transition-colors hover:text-primary"
+            >
               Subjects
             </Link>
-            <Link href="/ai-chat" className="text-sm font-medium transition-colors hover:text-primary">
+            <Link
+              href="/ai-chat"
+              className="text-sm font-medium transition-colors hover:text-primary"
+            >
               AI Chat
             </Link>
-            <Link href="/resources" className="text-sm font-medium transition-colors hover:text-primary">
+            <Link
+              href="/resources"
+              className="text-sm font-medium transition-colors hover:text-primary"
+            >
               Resources
             </Link>
           </nav>
@@ -71,18 +90,25 @@ export function Navbar() {
             size="sm"
             className="hidden md:flex items-center gap-1 bg-orange-50 text-orange-600 hover:bg-orange-100 dark:bg-orange-900/20 dark:text-orange-400 dark:hover:bg-orange-900/30"
           >
-            <Flame className="h-4 w-4 text-orange-500" />
+            <Flame className="h-8 w-8 text-orange-500" fill="#F62736" />
+            {/* <img src="../public/streak.png" alt="" /> */}
             <span className="font-medium">{currentStreak}</span>
-            <span className="text-xs ml-0.5">days</span>
+            {/* <span className="text-xs ml-0.5">days</span> */}
           </Button>
 
           <ThemeToggle />
 
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" className="relative h-8 w-8 rounded-full">
-                <Avatar className="h-8 w-8">
-                  <AvatarImage src="/placeholder.svg?height=32&width=32" alt="User" />
+              <Button
+                variant="ghost"
+                className="relative h-10 w-10 rounded-full "
+              >
+                <Avatar className="h-8 w-8 border-2 border-gray-800 overflow-hidden">
+                  <AvatarImage
+                    src="https://icons.veryicon.com/png/o/miscellaneous/user-avatar/user-avatar-male-5.png"
+                    alt="User"
+                  />
                   <AvatarFallback>AT</AvatarFallback>
                 </Avatar>
               </Button>
@@ -90,8 +116,12 @@ export function Navbar() {
             <DropdownMenuContent className="w-56" align="end" forceMount>
               <DropdownMenuLabel className="font-normal">
                 <div className="flex flex-col space-y-1">
-                  <p className="text-sm font-medium leading-none">Aaryan Tripathi</p>
-                  <p className="text-xs leading-none text-muted-foreground">aaryan@example.com</p>
+                  <p className="text-sm font-medium leading-none">
+                    Aaryan Tripathi
+                  </p>
+                  <p className="text-xs leading-none text-muted-foreground">
+                    aaryan@example.com
+                  </p>
                 </div>
               </DropdownMenuLabel>
               <DropdownMenuSeparator />
@@ -140,8 +170,17 @@ export function Navbar() {
           </DropdownMenu>
 
           {/* Mobile Menu Button */}
-          <Button variant="ghost" size="icon" className="md:hidden" onClick={toggleMenu}>
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          <Button
+            variant="ghost"
+            size="icon"
+            className="md:hidden"
+            onClick={toggleMenu}
+          >
+            {isMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
           </Button>
         </div>
       </div>
@@ -151,7 +190,11 @@ export function Navbar() {
         <div className="md:hidden border-t">
           <div className="container py-4 space-y-2">
             <div className="relative mb-4">
-              <Input type="text" placeholder="Search topics..." className="pl-8" />
+              <Input
+                type="text"
+                placeholder="Search topics..."
+                className="pl-8"
+              />
               <Search className="absolute left-2 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-500" />
             </div>
 
@@ -169,27 +212,51 @@ export function Navbar() {
               </Badge>
             </div>
 
-            <Link href="/" className="flex items-center py-2" onClick={toggleMenu}>
+            <Link
+              href="/"
+              className="flex items-center py-2"
+              onClick={toggleMenu}
+            >
               <Home className="mr-2 h-5 w-5" />
               <span>Home</span>
             </Link>
-            <Link href="/dashboard" className="flex items-center py-2" onClick={toggleMenu}>
+            <Link
+              href="/dashboard"
+              className="flex items-center py-2"
+              onClick={toggleMenu}
+            >
               <BarChart3 className="mr-2 h-5 w-5" />
               <span>Dashboard</span>
             </Link>
-            <Link href="/subjects" className="flex items-center py-2" onClick={toggleMenu}>
+            <Link
+              href="/subjects"
+              className="flex items-center py-2"
+              onClick={toggleMenu}
+            >
               <BookOpen className="mr-2 h-5 w-5" />
               <span>Subjects</span>
             </Link>
-            <Link href="/ai-chat" className="flex items-center py-2" onClick={toggleMenu}>
+            <Link
+              href="/ai-chat"
+              className="flex items-center py-2"
+              onClick={toggleMenu}
+            >
               <MessageSquare className="mr-2 h-5 w-5" />
               <span>AI Chat</span>
             </Link>
-            <Link href="/resources" className="flex items-center py-2" onClick={toggleMenu}>
+            <Link
+              href="/resources"
+              className="flex items-center py-2"
+              onClick={toggleMenu}
+            >
               <BookOpen className="mr-2 h-5 w-5" />
               <span>Resources</span>
             </Link>
-            <Link href="/profile" className="flex items-center py-2" onClick={toggleMenu}>
+            <Link
+              href="/profile"
+              className="flex items-center py-2"
+              onClick={toggleMenu}
+            >
               <User className="mr-2 h-5 w-5" />
               <span>My Profile</span>
             </Link>
@@ -197,6 +264,6 @@ export function Navbar() {
         </div>
       )}
     </header>
-  )
+  );
 }
 

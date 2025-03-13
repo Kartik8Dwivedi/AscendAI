@@ -1,5 +1,14 @@
-import Link from "next/link"
-import { BookOpen, Mail, Phone, MapPin, Github, Twitter, Linkedin, Facebook } from "lucide-react"
+import Link from "next/link";
+import {
+  BookOpen,
+  Mail,
+  Phone,
+  MapPin,
+  Github,
+  Twitter,
+  Linkedin,
+  Facebook,
+} from "lucide-react";
 
 export function Footer() {
   return (
@@ -11,11 +20,11 @@ export function Footer() {
               <div className="rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 p-1 text-white">
                 <BookOpen className="h-6 w-6" />
               </div>
-              <span className="text-xl font-bold">Dal Bati Churma</span>
+              <span className="text-xl font-bold">Ascend AI</span>
             </div>
             <p className="text-gray-600 dark:text-gray-400">
-              Transforming education through AI-powered personalized learning experiences that make quality education
-              accessible to all.
+              Transforming education through AI-powered personalized learning
+              experiences that make quality education accessible to all.
             </p>
             <div className="flex space-x-4">
               <Link
@@ -136,24 +145,27 @@ export function Footer() {
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 text-purple-600 dark:text-purple-400" />
-                <span className="text-gray-600 dark:text-gray-400">+91 98765 43210</span>
+                <span className="text-gray-600 dark:text-gray-400">
+                  +91 98765 43210
+                </span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 text-purple-600 dark:text-purple-400" />
-                <span className="text-gray-600 dark:text-gray-400">contact@dalbatichurma.edu</span>
+                <span className="text-gray-600 dark:text-gray-400">
+                  contact@ascendai.edu
+                </span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-gray-200 dark:border-gray-800 mt-12 pt-8 text-center text-gray-600 dark:text-gray-400">
-          <p>© {new Date().getFullYear()} Dal Bati Churma. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Ascend AI. All rights reserved.</p>
           <p className="mt-2 text-sm">
-            Developed for aiXplain Hackathon by Aaryan Tripathi, Shiksha Lahare, Pragya Dave, and Kartik Dwivedi
+            Developed with 🩵 by Kartik Dwivedi, Pragya Dave, Aaryan Tripathi & Shiksha Lahre
           </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }
-
