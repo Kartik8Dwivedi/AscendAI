@@ -29,7 +29,7 @@ export function ModelBAssessmentPanel({
             >
               <Brain className="h-5 w-5" />
             </div>
-            <CardTitle className="text-base">Model B Assessment</CardTitle>
+            <CardTitle className="text-base">Teach the Model B</CardTitle>
           </div>
           {isAvailable ? (
             <Badge className="bg-green-500">Available</Badge>
@@ -45,13 +45,13 @@ export function ModelBAssessmentPanel({
         {isAvailable ? (
           <div className="space-y-4">
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              You've completed enough lectures to take the assessment. Test your understanding with Model B.
+              You've completed enough lectures to teach the Model B. Test your learnings by teaching Model B and earn rewards!
             </p>
             <div className="bg-blue-50 dark:bg-blue-900/20 p-3 rounded-md">
               <div className="flex items-start">
                 <CheckCircle className="h-5 w-5 text-blue-600 dark:text-blue-400 mt-0.5 mr-2 shrink-0" />
                 <div className="text-sm text-blue-700 dark:text-blue-300">
-                  Assessment includes both multiple-choice questions and voice-based explanations to thoroughly evaluate
+                  This section includes both multiple-choice questions and voice-based explanations to thoroughly evaluate
                   your understanding.
                 </div>
               </div>
@@ -66,7 +66,7 @@ export function ModelBAssessmentPanel({
         ) : (
           <div className="space-y-4">
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              Complete {lecturesRemaining} more {lecturesRemaining === 1 ? "lecture" : "lectures"} to unlock the Model B
+              Complete {lecturesRemaining} more {lecturesRemaining === 1 ? "lecture" : "lectures"} to complete this subtopic to unlock the Model B
               assessment.
             </p>
             <div className="bg-gray-50 dark:bg-gray-800 p-3 rounded-md">
