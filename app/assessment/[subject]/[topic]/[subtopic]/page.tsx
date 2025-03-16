@@ -146,59 +146,71 @@ export default function AssessmentPage() {
   };
 
   // Sample questions based on the topic
-  const questions: Question[] = [
-    {
-      id: "1",
-      question: `What is the main principle behind ${formattedSubtopic}?`,
-      options: [
-        "Conservation of energy",
-        "Newton's laws of motion",
-        "Principle of superposition",
-        "Quantum mechanics",
-      ],
-      correctAnswer: "0",
-      type: "mcq",
-      explanation:
-        "The conservation of energy is a fundamental principle in physics that states that energy cannot be created or destroyed, only transformed from one form to another.",
-    },
-    {
-      id: "2",
-      question: `Explain in your own words how ${formattedSubtopic} relates to everyday phenomena.`,
-      type: "voice",
-      explanation:
-        "This question tests your ability to connect theoretical concepts with practical applications. A good answer would include specific examples from daily life.",
-    },
-    {
-      id: "3",
-      question: `Which of the following is NOT a characteristic of ${formattedSubtopic}?`,
-      options: [
-        "It follows mathematical rules",
-        "It can be observed experimentally",
-        "It violates the laws of thermodynamics",
-        "It has practical applications",
-      ],
-      correctAnswer: "2",
-      type: "mcq",
-      explanation:
-        "The laws of thermodynamics are fundamental principles that govern physical and chemical processes, and they are not violated by any legitimate scientific concept.",
-    },
-    {
-      id: "4",
-      question: `What is the mathematical formula most commonly associated with ${formattedSubtopic}?`,
-      options: ["E = mc²", "F = ma", "PV = nRT", "a² + b² = c²"],
-      correctAnswer: "1",
-      type: "mcq",
-      explanation:
-        "F = ma is Newton's second law of motion, which describes the relationship between force, mass, and acceleration.",
-    },
-    {
-      id: "5",
-      question: `Describe a scenario where understanding ${formattedSubtopic} would help solve a problem in real life.`,
-      type: "voice",
-      explanation:
-        "This question assesses your ability to apply the concepts to practical problem-solving. Strong responses include specific problems and detailed solutions.",
-    },
-  ];
+const questions: Question[] = [
+  {
+    id: "1",
+    question: `What is the main principle behind hydrocarbons?`,
+    options: [
+      "Conservation of energy",
+      "Bonding of carbon and hydrogen atoms",
+      "Formation of ionic bonds",
+      "Oxidation-reduction reactions",
+    ],
+    correctAnswer: "1",
+    type: "mcq",
+    explanation:
+      "Hydrocarbons are organic compounds made up of only carbon and hydrogen atoms, primarily bonded in covalent bonds.",
+  },
+  {
+    id: "2",
+    question: `Explain in your own words how hydrocarbons are important in everyday life.`,
+    type: "voice",
+    explanation:
+      "This question tests your ability to connect the importance of hydrocarbons to real-world applications. Strong answers include fuels, plastics, and organic chemicals.",
+  },
+  {
+    id: "3",
+    question: `Which of the following is NOT a type of hydrocarbon?`,
+    options: ["Alkanes", "Alkenes", "Alkynes", "Proteins"],
+    correctAnswer: "3",
+    type: "mcq",
+    explanation:
+      "Proteins are biological macromolecules made of amino acids, while alkanes, alkenes, and alkynes are all types of hydrocarbons.",
+  },
+  {
+    id: "4",
+    question: `What is the simplest form of hydrocarbon?`,
+    options: ["Methane", "Ethanol", "Propane", "Butane"],
+    correctAnswer: "0",
+    type: "mcq",
+    explanation:
+      "Methane (CH₄) is the simplest hydrocarbon, consisting of a single carbon atom bonded to four hydrogen atoms.",
+  },
+  {
+    id: "5",
+    question: `Describe how the structure of hydrocarbons affects their physical properties.`,
+    type: "voice",
+    explanation:
+      "This question assesses your understanding of how the structure, like chain length and bonding, impacts melting points, boiling points, and solubility.",
+  },
+  {
+    id: "6",
+    question: `Which of the following hydrocarbons is used as a major fuel source?`,
+    options: ["Methane", "Ethanol", "Glucose", "Caffeine"],
+    correctAnswer: "0",
+    type: "mcq",
+    explanation:
+      "Methane is a primary component of natural gas and is widely used as a fuel for heating and electricity generation.",
+  },
+  {
+    id: "7",
+    question: `Explain the difference between saturated and unsaturated hydrocarbons.`,
+    type: "voice",
+    explanation:
+      "This question tests your knowledge of hydrocarbon classifications. A saturated hydrocarbon has only single bonds between carbon atoms, while unsaturated hydrocarbons have one or more double or triple bonds.",
+  },
+];
+
 
   // Sample educational games
   const games: Game[] = [
@@ -492,7 +504,7 @@ export default function AssessmentPage() {
               </Avatar>
               <div>
                 <h1 className="text-xl font-bold">
-                  Face-to-Face Assessment with Model B
+                  Face-to-Face Interaction with Model B
                 </h1>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
                   Explain your understanding of {formattedSubtopic} to Model B
@@ -515,7 +527,7 @@ export default function AssessmentPage() {
                 <div className="text-center py-12">
                   <Brain className="h-16 w-16 mx-auto text-blue-600 dark:text-blue-400 mb-4" />
                   <h2 className="text-2xl font-bold mb-2">
-                    Ready for Your Assessment?
+                    Ready for One on One Interaction?
                   </h2>
                   <p className="text-gray-600 dark:text-gray-400 max-w-md mx-auto mb-6">
                     In this face-to-face session, Model B will assess your
@@ -525,14 +537,14 @@ export default function AssessmentPage() {
                   </p>
                   <Button size="lg" onClick={startCall}>
                     <Video className="mr-2 h-5 w-5" />
-                    Start Face-to-Face Assessment
+                    Start Face-to-Face Interaction
                   </Button>
                 </div>
               ) : faceToFaceComplete ? (
                 <div className="text-center py-12">
                   <CheckCircle className="h-16 w-16 mx-auto text-green-600 dark:text-green-400 mb-4" />
                   <h2 className="text-2xl font-bold mb-2">
-                    Face-to-Face Assessment Complete!
+                    Face-to-Face Interaction Complete!
                   </h2>
                   <p className="text-gray-600 dark:text-gray-400 max-w-md mx-auto mb-6">
                     You've successfully completed the face-to-face portion of
@@ -757,7 +769,7 @@ export default function AssessmentPage() {
                 <AvatarFallback>MB</AvatarFallback>
               </Avatar>
               <div>
-                <h1 className="text-xl font-bold">Model B Assessment</h1>
+                <h1 className="text-xl font-bold">Model B Follow-Up Questions</h1>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
                   Testing your understanding of {formattedSubtopic}
                 </p>
@@ -875,7 +887,7 @@ export default function AssessmentPage() {
           <Card>
             <CardHeader className="text-center">
               <Trophy className="h-16 w-16 mx-auto text-yellow-500 mb-2" />
-              <CardTitle className="text-2xl">Assessment Complete!</CardTitle>
+              <CardTitle className="text-2xl">Interaction Complete!</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="text-center">
