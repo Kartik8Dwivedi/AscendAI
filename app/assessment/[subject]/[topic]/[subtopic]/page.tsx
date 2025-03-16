@@ -308,7 +308,7 @@ const questions: Question[] = [
     setTimeout(() => {
       setIsAiThinking(false);
       setAiResponse(
-        "Hello! I'm Model B, your AI examiner. Today I'll be assessing your understanding of " +
+        "Hello! I'm Model B, your AI Student. I would love to know about  " +
           formattedSubtopic +
           ". Could you please explain the key concepts of this topic in your own words?"
       );
@@ -573,7 +573,7 @@ const questions: Question[] = [
                       </Avatar>
                     </div>
                     <div className="absolute bottom-2 left-2 bg-black/60 px-2 py-1 rounded text-white text-sm">
-                      Model B (Examiner)
+                      Model B
                     </div>
                   </div>
 
@@ -771,7 +771,7 @@ const questions: Question[] = [
               <div>
                 <h1 className="text-xl font-bold">Model B Follow-Up Questions</h1>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
-                  Testing your understanding of {formattedSubtopic}
+                  Help me know more about {formattedSubtopic}
                 </p>
               </div>
             </div>
